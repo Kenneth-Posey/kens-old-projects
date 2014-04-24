@@ -1,0 +1,24 @@
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.csprojResolveAssemblyReference.cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\MouseKeyboardLibrary\MouseKeyboardLibrary\obj\Debug\MouseKeyboardLibrary.pdb

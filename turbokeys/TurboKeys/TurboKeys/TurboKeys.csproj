@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5F9598E-9861-41F3-9D35-AEAFA9B1BCB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TurboKeys</RootNamespace>
+    <AssemblyName>TurboKeys</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.5.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>980B26BAD4FF8D154515A11EBEC8DA587F2789E3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TurboKeys_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="getBrowser.cs" />
+    <Compile Include="ImageSearchWrapper.cs" />
+    <Compile Include="iniParser.cs" />
+    <Compile Include="Interfaces\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\MainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\MainInterface.Designer.cs">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mousekey.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\UpdateCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\UpdateCheck.Designer.cs">
+      <DependentUpon>UpdateCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurboScript.cs" />
+    <EmbeddedResource Include="Interfaces\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\MainInterface.resx">
+      <DependentUpon>MainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Interfaces\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\UpdateCheck.resx">
+      <DependentUpon>UpdateCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="TurboKeys_TemporaryKey.pfx" />
+    <Resource Include="Resources\OCRAStd.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ablack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Byellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coord-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crosshairs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ggreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Igreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Myellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ngreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoClickBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoClickGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ogreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ryellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Syellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topdiskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topFolderOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topPlayIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topreload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ublack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ugreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalHook\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj">
+      <Project>{F52AA97E-180A-40ED-8F2B-09080171D6C7}</Project>
+      <Name>Gma.UserActivityMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanControl\HumanControl.csproj">
+      <Project>{B83AFF18-2C41-4B57-A2EC-503ACD8B83B1}</Project>
+      <Name>HumanControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MouseKeyboardLibrary\MouseKeyboardLibrary\MouseKeyboardLibrary.csproj">
+      <Project>{F419622F-4D82-40A6-B4FB-3FE36579F018}</Project>
+      <Name>MouseKeyboardLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pauseIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainIcon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainIcon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursorSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randomize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advanced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advancedblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scriptbox-background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

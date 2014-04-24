@@ -1,0 +1,122 @@
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.g.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Login.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.MainInterface.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Properties.Resources.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Settings.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.UpdateCheck.resources
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.application
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.application
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.config
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.config
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\TurboKeys.application
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.g.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Login.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.MainInterface.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Properties.Resources.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Settings.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.UpdateCheck.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.application
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.config
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.application
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.g.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Login.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.MainInterface.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Properties.Resources.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Settings.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.UpdateCheck.resources
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.application
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.config
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.application
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.csprojResolveAssemblyReference.cache
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.g.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Login.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.MainInterface.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Properties.Resources.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Settings.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.UpdateCheck.resources
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.csproj.GenerateResource.Cache
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe.manifest
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.application
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.config
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe.manifest
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.application
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.exe
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\TurboKeys.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\HumanControl.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\bin\Debug\MouseKeyboardLibrary.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.csprojResolveAssemblyReference.cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.g.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Login.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.MainInterface.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Properties.Resources.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.Settings.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.UpdateCheck.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.csproj.GenerateResource.Cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe.manifest
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.application
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\TurboKeys\obj\x86\Debug\TurboKeys.exe

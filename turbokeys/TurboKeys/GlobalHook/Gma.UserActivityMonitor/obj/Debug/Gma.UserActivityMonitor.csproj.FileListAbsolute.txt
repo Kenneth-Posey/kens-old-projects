@@ -1,0 +1,24 @@
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csprojResolveAssemblyReference.cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb

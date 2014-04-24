@@ -1,0 +1,24 @@
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\HumanControl\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\HumanControl\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\HumanControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\HumanControl\obj\Debug\HumanControl.dll
+C:\Users\Virus\Documents\TurboKeys\TurboKeys\HumanControl\obj\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\HumanControl\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\HumanControl\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\HumanControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\HumanControl\obj\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboKeys\HumanControl\obj\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\HumanControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.dll
+C:\Users\Virus\Documents\1- Current Programming Projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.pdb
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.dll
+C:\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\bin\Debug\HumanControl.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.csprojResolveAssemblyReference.cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.dll
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_current-projects\turbokeys\TurboKeys\HumanControl\obj\Debug\HumanControl.pdb
