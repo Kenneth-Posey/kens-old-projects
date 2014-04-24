@@ -1,0 +1,60 @@
+{% extends "skeleton.html" %}
+{% block body %}
+<a style="float:right;" href="/pa?offset={{next}}">Next Page >>></a>
+<a href="/pa?offset={{prev}}"><<< Previous Page</a><br /><br />
+<table class="order" width="950">
+    <style>
+        div.maxwidth
+        {
+            overflow: hidden;
+            width: 180px;
+        }
+        tr.grey
+        {
+            background-color:#AAAAAA;
+        }
+    </style>
+    <tr>
+        <th>
+            Trans Id
+        </th>
+        <th>
+            Amount
+        </th>
+        <th>
+            Assigned Agent
+        </th>
+        <th>
+            Delivered Agent
+        </th>
+        <th>
+            Date
+        </th>
+    </tr>
+    
+{% for pa in palist %}
+    <tr class="{% cycle '' 'grey'%}">
+        <td>
+            <a href="/paorder?key={{ pa.key }}">{{ pa.paTransactionId }}</a>
+        </td>
+        <td>
+            {{ pa.paAmount }}
+        </td>
+        {% if pa.paOrderDeliver %}
+            <td class="delivered" >
+        {% else %}
+            <td class="notdelivered" >
+        {% endif %} 
+            {{ pa.paAssignedAgentNick }}
+        </td>
+        <td>
+            {{ pa.paDeliveryAgentNick }}
+        </td>
+        <td>
+            {{ pa.paDate }}
+        </td>
+    </tr>
+
+{% endfor %}
+</table>
+{% endblock %}

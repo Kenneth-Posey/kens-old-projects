@@ -1,0 +1,48 @@
+# webapp/app.yaml
+application: smokin-goldshop
+version: 25
+runtime: python27
+threadsafe: false
+api_version: 1
+
+inbound_services:
+- mail
+
+handlers:
+- url: /stylesheet
+  static_dir: stylesheet
+  
+- url: /javascript
+  static_dir: javascript
+  
+- url: /image
+  static_dir: image
+  
+- url: /sound/ogg/(.*?\.(ogg))
+  upload: sound/ogg/
+  static_files: sound/ogg/\1
+  mime_type: audio/ogg
+  
+- url: /sound/mp3/(.*?\.(mp3))
+  upload: sound/mp3/
+  static_files: sound/mp3/\1
+  mime_type: audio/mpeg
+
+- url: /favicon\.ico
+  static_files: image/favicon.ico
+  upload: image/favicon\.ico
+  
+- url: /_ah/mail/pa_order@smokin-goldshop\.appspotmail\.com 
+  script: mail.py 
+
+- url: /agent/.*
+  script: agent_main.py
+  
+- url: /admin/.*
+  script: admin_main.py
+  
+- url: /ajax/.*
+  script: ajax_main.py
+  
+- url: /.*
+  script: main.py

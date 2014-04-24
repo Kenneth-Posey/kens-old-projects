@@ -1,0 +1,24 @@
+{% extends "skeleton.html" %}
+{% block body %}
+{% for tOrder in orders %}
+    <table class="order" width="950">
+        <tr>
+            <th width="150">Name</th>
+            <th width="250">PayPal Email</th>
+            <th width="150">Timestamp</th>
+            <th width="150">{{ tOrder.orderSimpleGoldAmount }}</th>
+        </tr>
+        <tr>
+            <td>{{ tOrder.orderFormName }}</td>
+            <td>{{ tOrder.orderPaypalEmail }}</td>
+            <td style="text-align:center;">{{ tOrder.orderCreated|date:"d M - H:i" }} </td>
+            {% ifequal tOrder.orderDeliver 'True' %}
+                <td class="delivered" style="text-align:center;"><a href="/order?key={{ tOrder.key }}">Order Details</a></td>
+            {% else %}
+                <td class="notdelivered" style="text-align:center;"><a href="/order?key={{ tOrder.key }}">Order Details</a></td>
+            {% endifequal %}
+        </tr>
+    </table><br /><br />
+{% endfor %}
+
+{% endblock %}

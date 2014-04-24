@@ -1,0 +1,61 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+{% for agent in agents %}
+
+<a href="/agentmaster?agent={{ agent.key }}">{{agent.agentId}}</a> <br />
+
+{% endfor %}
+<br /><br />
+
+{% ifequal extended 'True' %}
+<!-- start table -->
+<table width="1000">
+    <tr>
+        <th colspan="5">
+            <h3>Agent Order History: {{agent.agentId}}</h3>
+        </th>
+    </tr>
+    <tr>
+        <th width="150">Order PP Email</th>
+        <th>Gold Amount</th>
+        <th>Cost</th>
+        <th>Bonus Gold</th>
+        <th>Date Delivered</th>
+    </tr>
+    {% for order in orders %}
+        <tr>
+            <td width="150"><a href="/order?key={{ order.key }}">{{order.orderPaypalEmail}}</a></td>
+            <td>{{order.orderSimpleGoldAmount}}</td>
+            <td>${{order.orderCost}}</td>
+            <td>{{order.orderSimpleBonusGold}}</td>
+            <td>{{order.orderCompleted}}</td>
+        </tr>
+    {% endfor %}
+</table><br /><br />
+<table width="1000">
+    <tr>
+        <th colspan="5">
+            <h3>Agent Donation History</h3>
+        </th>
+    </tr>
+    <tr>
+        <th width="150">Donor Gold Amount</th>
+        <th>Donor RS Name</th>
+        <th>Donor Forum Name</th>
+        <th>Donor Memo</th>
+        <th>Donor Date</th>
+    </tr>
+    {% for donation in donations %}
+        <tr>
+            <td width="150">{{donation.donorGoldAmount}}</td>
+            <td>{{donation.donorRsName}}</td>
+            <td>{{donation.donorForumName}}</td>
+            <td>{{donation.donorMemo}}</td>
+            <td>{{donation.donorDate}}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endifequal %}
+{% endblock %}

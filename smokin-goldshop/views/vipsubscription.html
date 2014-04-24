@@ -1,0 +1,13 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+Owner: <a href="/vip?key={{ tSub.subscriptionOwnerKey }}">{{ tSub.subscriptionOwner }}</a><br />
+
+Auto State: {{ tSub.subscriptionAutoState }}<br />
+Manual State: {{ tSub.subscriptionManualState }}<br />
+Is Active: {{ tSub.subscriptionIsActive }}<br />
+Last Paid: {{ tSub.subscriptionLastPaid|date:"d M - H:i" }}<br />
+Start Date: {{ tSub.subscriptionStart|date:"d M - H:i" }} 
+
+
+{% endblock %}

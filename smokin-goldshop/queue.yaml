@@ -1,0 +1,8 @@
+queue:
+- name: default
+  rate: 60/s
+  bucket_size: 50
+  retry_parameters:
+    min_backoff_seconds: 2
+    max_backoff_seconds: 200
+    task_retry_limit: 10

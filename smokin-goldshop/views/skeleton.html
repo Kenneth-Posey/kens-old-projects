@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheet/main.css?blah=11" type="text/css" />
+        <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+        <script type="text/javascript" src="/javascript/jquery.1.9.1.js"></script>
+        <script type="text/javascript" src="/javascript/jquery.lavalamp.js"></script>
+        <script type="text/javascript" src="/javascript/jquery.easing.js"></script>
+        <script type="text/javascript" src="/javascript/jquery.flot.js"></script>
+    <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
+        <script type="text/javascript" src="/javascript/jquery.menu-collapsed.js"></script>
+        <script>tLocalChannel = {{ user.user_id}};</script>
+        <script type="text/javascript" src="/javascript/scripts.js?blah=572"></script>
+        <script type="text/javascript">
+        
+        function activaterefund() {
+	        var refundlink = $("a[id='refundlink']");
+	        refundlink.css("color", "green");
+	        refundlink.attr("href", "/refund");
+        }
+		
+        function log(object) {
+	        $this = $(object);
+	        tPostData = Array();
+	        tDestination = "/log";
+	        $.ajax({
+		        type: 'post',
+		        url: tDestination,
+		        dataType: 'text',
+		        data: tPostData,
+		        success: function (data) {
+			        $this.removeAttr('href');
+			        $this.text(data);
+			        if (data == "You're Online!") {
+				        loglink.css("color", "green");
+			        } else if (data == "You're Offline!") {
+				        var loglink = $('#loglink');
+				        loglink.css("color", "red");
+			        }
+		        },
+		        error: function (XMLHttpRequest, textStatus, errorThrown) {
+			        $this.text(errorThrown);
+		        }
+	        });
+        }
+		
+        function ping() {
+	        $.ajax({
+		        type: 'post',
+		        url: '/agentout',
+		        dataType: 'text',
+		        data: "",
+		        success: function(data) {
+			        if (data == "offline") {
+				        var loglink = $('#loglink');
+				        loglink.text("You are offline!");
+				        loglink.css("color", "red");
+			        } else if (data == "online") {
+				        var loglink = $('#loglink');
+				        loglink.text("You are online!");
+				        loglink.css("color", "green");
+			        }
+		        },
+		        error: function(XMLHttpRequest, textStatus, errorThrown) {
+		        }
+	        });
+        }
+		
+        function OrderChecker() {
+		   
+	        var tDestination = "/notify";
+		   
+	        $.ajax({
+		        type: 'get',
+		        url: tDestination,
+		        dataType: 'text',
+		        data: "",
+		        success: function (response) {
+					if (response == "0"){
+							setTimeout("OrderChecker()", 20000);
+					} else if(response == "1") {
+							PlaySound(0, {{ agent.agentSoundRepeat }});
+					}
+		        },
+		        error: function (XMLHttpRequest, textStatus, errorThrown) {
+				   
+		        }
+	        });
+        };
+	   
+        function PlaySound(current, max) {
+	        if (current < max) {   
+		        var tSound;
+		        if(navigator.userAgent.indexOf("Firefox") > 1) {
+			        tSound = document.getElementById('notifyfirefox');
+		        }
+		        else { 
+			        tSound = document.getElementById('notify');
+		        }
+				
+		        tSound.play();
+				
+		        current++;
+		        setTimeout(PlaySound, {{ agent.agentSoundDelay }}, current, max);
+	        }
+        };
+		
+		var CompareGuids = function() {
+			var firstGuid = $('#correct-order-code').attr('value');
+			var secondGuid = $('#check-order-code').val();
+			var transactionID = $('#paypal-transaction-id').attr('value');
+		
+			// first part is regex to replace
+			firstGuid = firstGuid.replace(/\W/g, '').toLowerCase();
+			secondGuid = secondGuid.replace(/\W/g, '').toLowerCase();
+			
+			$.ajax('http://smokin-goldshop.appspot.com/verify-code?code=' + secondGuid + '&id=' + transactionID);			
+			
+			if(firstGuid == secondGuid) {
+				$('#check-order-code-box').append('<span style="color:green"><br />Valid Code</span>');
+				$('#verified-order-field').html('True');
+			} else {
+				$('#check-order-code-box').append('<span style="color:red"><br />InValid Code</span>');
+			}
+			
+			return false;
+		};
+	   
+        </script>
+        <title>Smokin Mils Goldshop Agent Portal</title>
+    </head>
+    <body>
+    
+        {% autoescape off %}
+        <div class="container">
+            <div class="header">
+                {% include "header.html" %}
+            </div>
+            <div class="navigation">
+                {% include "navigation.html" %}
+            </div>
+            {% ifnotequal error "" %}
+                <div class="error">
+                    {{ error }}
+                </div>
+            {% endifnotequal %}
+            <div class="content">
+                <div style="float:left">
+                    {% include "sidebar.html" %}
+                </div>
+                {% block body %}
+       	         
+                {% endblock %}
+                <div style="clear:both; display:block;">&nbsp;</div>
+                <div style="text-align:right">Portal Time: {{ TIME }}</div>
+            </div>
+        </div>
+        {% endautoescape %}
+        
+        <script>
+            $(document).ready(function (){
+                ping();
+                {% ifequal agent.agentSoundPreference 'True'%}
+                    setTimeout("OrderChecker()", 10000);
+                {% endifequal %}
+            });
+        </script>
+        {% ifequal agent.agentSoundPreference 'True'%}
+            <audio src="/sound/ogg/{{ agent.agentSoundSelection }}.ogg" autostart="false" id="notifyfirefox" preload="true"></audio>
+            <audio src="/sound/mp3/{{ agent.agentSoundSelection }}.mp3" autostart="false" id="notify" preload="true"></audio>
+        {% endifequal %}
+    </body>
+</html>

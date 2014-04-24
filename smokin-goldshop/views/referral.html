@@ -1,0 +1,42 @@
+{% extends "skeleton.html" %}
+{% block body %}
+{% ifequal search 'False' %}
+
+{{ error }}<br /><br />
+    Referral Id: {{ referrer.referId }}<br />
+    Referral PIN: {{ referrer.referPin }}<br />
+    Referral Email: {{ referrer.referEmail }} <br />
+    Balance in GP: {{ referrer.referSimpleGold }}<br />
+    Balance in Cash: {{ referrer.referSimpleCash }}<br /><br /><br />
+    
+    <form action="" method="POST">
+        <input type="hidden" value="{{ referrer.referId }}" name="id" />
+        <input type="hidden" value="{{ referrer.key }}" name="key" />
+        <input type="submit" value="Pay Referrer" />
+    </form>
+    
+{% endifequal %}
+{% ifequal search 'True' %}
+{{ error }}<br /><br />
+    <table width="300">
+        <form action="" method="post">
+        <tr>
+            <th colspan="2" style="text-align:center" >Search for Referrer</th>
+        </tr>
+        <tr>
+            <td>
+                Referrer Id: 
+            </td>
+            <td>
+                <input type="text" rows="1" cols="25" name="id" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Search" />
+            </td>
+        </tr>
+        </form>
+    </table>
+{% endifequal %} 
+{% endblock %}

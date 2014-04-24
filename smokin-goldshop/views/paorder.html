@@ -1,0 +1,72 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+{% ifequal showerror 'True' %}
+<h3 style="color:red">{{ error }} </h3> <br /><br />
+{% endifequal %}
+<table style="border-color: black; border-style: solid; border-width:3px;">
+    <tr>
+        <th>
+            Received Date
+        </th>
+        <td>
+            {{ tPaOrder.paDate|date:"d M Y H:i:s" }}
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Order ID
+        </th>
+        <td>
+            <a href="https://www.playerauctions.com/Member/MyOrderDetail.aspx?OrderId={{ tPaOrder.paTransactionId }}">{{ tPaOrder.paTransactionId }}</a>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Order Amount
+        </th>
+        <td>
+            {{ tPaOrder.paAmount }} {{ gold_type }}
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Gold Type
+        </th>
+        <td>
+            {{ gold_type }}
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Assigned Agent
+        </th>
+        <td>
+            {{ tPaOrder.paAssignedAgentNick }}
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Delivered Agent
+        </th>
+        <td>
+            {{ tPaOrder.paDeliveryAgentNick }}
+        </td>
+    </tr>
+    {% if not tPaOrder.paOrderDeliver %}
+        {% if not tPaOrder.paOrderLock %}
+            <tr>
+                <th>
+                    Deliver Order
+                </th>
+                <td>
+                    <a class="ajax" href="/paorderdeliver" data-action="complete" data-orderid="{{ tPaOrder.key }}">
+                        Deliver Order
+                    </a>
+                </td>
+            </tr>
+        {% endif %}
+    {% endif %}
+</table>    
+
+{% endblock %}

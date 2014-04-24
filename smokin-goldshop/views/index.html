@@ -1,0 +1,116 @@
+{% extends "skeleton.html" %}
+{% block body %}
+    {% if user %}
+        Your Nickname: {{ agent.agentNickName }}<br />
+        Your Sound Preference: {{ agent.agentSoundPreference }}<br />
+        Your Online Status: {{ agent.agentOnline }}<br />
+        Your Commission: {{ agentcomm }}<br /><br />
+        Agents Online: {{agentnum}} <br />
+        {% for agent in agents %}
+            {{ agent.agentNickName }}<br />
+        {% endfor %}
+        <br />
+        <a href="/allout" class="ajax">Global Logout</a><br /><br />
+        
+        <a href="/textagents" class="ajax">Text All Agents</a>
+        <br /><br />
+        <a href="javascript:void(0);" onclick="PlaySound(0,1);">Test Notification Sound</a>
+        <br /><br />
+        
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Update Nickname
+                    </td>
+                    <td>
+                        <input type="text" name="nick" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sound Preference
+                    </td>
+                    <td>
+                        <select name="sound">
+                            <option value=""></option>
+                            <option value="true">Active</option>
+                            <option value="false">No Sound</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="update" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br /><br />
+        <!--
+        <table width="1000">
+            <tr>
+                <th colspan="5">
+                    <h3>Agent Donation History</h3>
+                </th>
+            </tr>
+            <tr>
+                <th width="150">Date</th>
+                <th width="150">RS Name</th>
+                <th width="150">Gold Amount</th>
+                <th>Memo</th>
+            </tr>
+            {% for donation in donations %}
+                <tr>
+                    <td>{{donation.donorDate|date:"M d, G:i" }}</td>
+                    <td>{{donation.donorRsName}}</td>
+                    <td width="150">{{donation.donorGoldAmount}}</td>
+                    <td>{{donation.donorMemo}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <table>
+            <style>
+                div.maxwidth
+                {
+                    overflow: hidden;
+                    width: 180px;
+                }
+                tr.grey
+                {
+                    background-color:#AAAAAA;
+                }
+            </style>
+            <tbody>
+                <tr>
+                    <th colspan="5">Agent PA Order History</th>
+                </tr>
+                <tr>
+                    <th>
+                        Order Id
+                    </th>
+                    <th>
+                        Order Gold Qty
+                    </th>
+                    <th>
+                        Order Delivered
+                    </th>
+                </tr>
+                {% for order in orders %}
+                    <tr class="{% cycle '' 'grey'%}">
+                        <td>
+                            <a href="/paorder?key={{ order.key }}">{{ order.paTransactionId }}</a>
+                        </td>
+                        <td>
+                            {{ order.paAmount }}
+                        </td>
+                        <td>
+                            {{ order.paDate }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        -->
+    {% endif %}
+{% endblock %}

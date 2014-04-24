@@ -1,0 +1,15 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+<table>
+    {% for order in orders %} 
+        <tr>
+            <td>Order Quantity</td>
+            <td>{{ order.orderQuantity }}</td>
+            <td>Order Agent</td>
+            <td>{{ order.orderAgent }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

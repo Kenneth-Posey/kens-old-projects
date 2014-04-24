@@ -1,0 +1,158 @@
+{% extends "skeleton.html" %}
+{% block body %}
+{% ifequal search 'False' %}
+    {% for customer in result %}
+        Customer: {{ customer.key }}<br />
+        Customer Name: {{ customer.customerFirstName }} {{ customer.customerLastName }}<br />
+        Address: {{ customer.customerAddress }}<br />
+        City: {{ customer.customerCity }}<br />
+        IP Addresses: {{ customer.customerIpAddresses }}<br />
+        Paypal Email: {{ customer.customerEmail }}<br />
+        Phone: {{ customer.customerPhone }}<br />
+        Order History: <br />
+        <table>
+            <tr>
+                <th>Order Date</th>
+                <th>Order Value</th>
+                <th>Delivery Status</th>
+            </tr>
+                {% for order in customerorders %}
+                <tr>
+                    <td>
+                        <a href="/order?key={{ order.key }}">{{ order.orderCreated|date:"d M Y H:i:s" }}</a>
+                    </td>
+                    <td>${{ order.orderCost}}</td>
+                    <td>{{ order.orderDeliver }}</td>
+                </tr>
+                {% endfor %}
+        </table><br />
+        24 Hour Total: ${{ tOrderData.orderTotal24 }}<br />
+        <!--15 Day Total: ${{ tOrderData.orderTotal15 }}<br />-->
+        30 Day Total: ${{ tOrderData.orderTotal }}<br />
+        <br />
+        Order Number: {{ customer.customerOrderCount }}<br />
+        Phone Verified: {{ customer.customerPhoneVerified }}<br />
+        Phone Verification Number: {{ customer.customerPhoneVerificationNumber }}<br />
+        Email Verified: {{ customer.customerEmailVerified }}<br />
+        Email Verification Number: {{ customer.customerEmailVerificationNumber }}<br />
+        Id Verified: {{ customer.customerIdVerified }}<br />
+        Paypal Id: {{ customer.customerPaypalId }}<br />
+        ID Link: {{ customer.customerIdLink }}<br />
+        Master Customer: <a href="/customermaster?key={{ customer.customerMaster }}">{{ customer.customerMaster }}</a> <br />
+        Memo: {{ customer.customerMemo }}<br /><br />
+        
+        Customer is PA Blacklisted: {{ customer.customerIsPaBlacklisted }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/blacklist" class="ajax" data-id="{{customer.key}}" data-type="PA">Blacklist to PlayerAuctions</a><br />
+        Customer is Global Blacklisted: {{ customer.customerIsGlobalBlacklisted }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/blacklist" class="ajax" data-id="{{customer.key}}" data-type="Global">Blacklist Globally</a><br /><br />
+        <!--
+            <a href="/blacklist.ajax" class="rpcajax" data-id="{{customer.key}}" >Blacklist to PlayerAuctions</a><br />
+            <a href="/blacklist.ajax" class="rpcajax" data-id="{{customer.key}}" data-type="Global">Blacklist Globally</a><br /><br />
+        -->
+    <table width="500">
+        <form action="" method="post">
+        <tr>
+            <th colspan="2" style="text-align:center" >Edit Customer Info</th>
+        </tr>
+                <input type="hidden" name="key" value="{{ customer.key }}" />
+        <tr>
+            <td>
+                Field to Edit
+            </td>
+            <td>
+                <select name="action">
+                    <option value="memo">Memo</option>
+                    <option value="phone">Phone Number</option>
+                    <option value="idverify">Id Verification Link</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                New Value      *Don't use multiple lines on number and id verification
+            </td>
+            <td>
+                <textarea rows="5" cols="25" name="item">{{ customer.customerMemo }}</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save Info" />
+            </td>
+        </tr>
+        </form>
+    </table>
+    {% endfor %}
+{% endifequal %}
+{% ifequal search 'True' %}
+    <table style="color:red"><tbody>
+        <form action="" method="post">
+        <input type="hidden" name="action" value="search" />
+        <tr>
+            <th width="280" style="padding-top:15px; padding-bottom: 15px; font-weight: bold; border-color: #222; border-width:2px; border-style: solid;">
+            Search by Email:
+            </th>
+            <td width="20"></td>
+            
+            <th width="280" style="padding-top:15px; padding-bottom: 15px;  font-weight: bold; border-color: #222; border-width:2px; border-style: solid;">
+            Search by Paypal Customer Id:
+            </th>
+        </tr>
+        <tr>
+            <td width="280" style="padding:15px; font-weight: bold; border-color: #222; border-width:2px; border-style: solid;">
+                <input type="text" name="email" id="email" />
+                <input type="hidden" value="email" />
+                <input type="submit" value="Search" />
+            </td>
+            
+            <td width="20"></td>
+            <td width="280" style="padding:15px;  font-weight: bold; border-color: #222; border-width:2px; border-style: solid;">
+                <input type="text" name="ppid" id="ppid" />
+                <input type="hidden" value="ppid" />
+                <input type="submit" value="Search" />
+            </td>
+        </tr>
+        </form>
+    </tbody></table>
+    <br /><br />
+    <table width="500">
+        <form action="" method="post">
+        <tr>
+            <th colspan="2" style="text-align:center" >Edit Customer Info</th>
+        </tr>
+        <tr>
+            <td>
+                Customer Key
+            </td>
+            <td>
+                <input type="text" name="key" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Field to Edit
+            </td>
+            <td>
+                <select name="action">
+                    <option value="phone">Phone Number</option>
+                    <option value="idverify">Id Verification Link</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                New Value
+            </td>
+            <td>
+                <input type="text" name="item" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save Info" />
+            </td>
+        </tr>
+        </form>
+    </table>
+{% endifequal %} 
+{% endblock %}

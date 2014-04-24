@@ -1,0 +1,43 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+<form action="" method="POST">
+    <select name="type">
+        <option value="random">Random</option>
+        <option value="me">Random to Me</option>
+        <option value="viprandom">VIP Random</option>
+        <option value="vipme">VIP Order Me</option>
+        <option value="vipcancelme">VIP Cancel</option>
+    </select>
+    <br /><br />
+    <input type="submit" value="Generate Order" />
+</form>
+
+{% for tOrder in orders %}
+    <table class="order" width="950">
+        <tr>
+            <th width="175">Name</th>
+            <th width="275">PayPal Email</th>
+            <th width="150">Timestamp</th>
+            <th width="150">{{ tOrder.orderSimpleGoldAmount }}</th>
+            <th width="175">Assigned Agent</th>
+        </tr>
+        <tr>
+            <td>{{ tOrder.orderFormName }}</td>
+            <td>{{ tOrder.orderPaypalEmail }}</td>
+            <td style="text-align:center;">{{ tOrder.orderCreated|date:"d M - H:i" }} </td>
+            {% ifequal tOrder.orderDeliver 'True' %}
+                <td class="delivered" 
+            {% endifequal %}
+            {% ifequal tOrder.orderIsRefunded 'True' %}
+                <td class="refunded"    
+            {% else %}
+                <td class="notdelivered"             
+            {% endifequal %}
+                style="text-align:center;"><a href="/order?key={{ tOrder.key }}">Order Details</a></td>
+            <td>{{ tOrder.GetAssignedAgentNick }}</td>
+        </tr>
+    </table><br /><br />
+{% endfor %}
+
+{% endblock %}

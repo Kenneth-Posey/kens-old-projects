@@ -1,0 +1,36 @@
+
+<script type="text/javascript">
+    $(function() { $(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});
+</script>
+
+<ul class="lavaLamp">
+        <li><a href="/">Agent Home</a></li>
+    {% if user %}
+        <li><a href="/paypal">Orders</a></li>
+        <li><a href="/palist">PA Entry</a></li>
+        <li><a href="/stock">Stock</a></li>
+        {% ifequal isAdmin 'True' %}
+            <li><a href="/agentaccount">Agents</a></li>  
+            <li><a href="/price">EoC Prices</a></li>  
+            <li><a href="/price07">07 Prices</a></li>
+        {% endifequal %}
+    {% endif %}
+        
+<span style="float:right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold 14px arial;
+    color: #fff; outline: none;
+    text-align: center; margin-top: 7px;">
+    {% if user %}
+        Signed in as {{ user.nickname }}
+        <a style="color: red; outline: none; text-decoration: none;" href="{{ logout }}"><b>[sign out]</b></a>
+    {% else %}
+        <a style="color: red; outline: none; text-decoration: none;"  href="{{ login }}"><b>[sign in]</b></a>
+    {% endif %}
+    {% if user %}
+        <br />
+        <a href="#" id="loglink" onclick="log(this); return false;" style="color:white; text-decoration:none;">Toggle Goldshop Status</a>
+    {% endif %}
+</span>
+</ul>

@@ -1,0 +1,5 @@
+cron:
+- description: vip subscription upgrade
+  url: /vipupgrademonitor
+  schedule: every 24 hours
+  

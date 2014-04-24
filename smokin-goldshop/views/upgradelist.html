@@ -1,0 +1,101 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+<a href="/vipcancellist">See Needed Cancellations</a><br />
+<a href="/viplist">See Active Vips</a><br /><br />
+
+<table>
+    <tr>
+        <h2>Upgrade to Tier 1</h2>
+    </tr>
+    <tr>
+        <table class="order" width="950">
+            <tr>
+                <th width="150">VIP Email</th>
+                <th width="200">Forum Name</th>
+                <th width="100">Subscription</th>
+                <th width="150">VIP Since</th>
+                <th width="100">Upgrade</th>
+            </tr>
+            {% for tVip in Tier1 %}
+                <tr>
+                    <td><a href="/vip?key={{ tVip.0.key }}">{{ tVip.0.subscriberEmail }}</a></td>
+                    <td>{{ tVip.0.subscriberForumName }}</td>
+                    <td><a href="/vipsubscription?key={{ tVip.1.key }}">Current Sub</a></td>
+                    <td>{{ tVip.0.subscriberCreated|date:"d M - H:i" }}</td>
+                    <td><a class="ajax" href="/vipupgrade" data-key="{{ tVip.1.key }}">Upgrade</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </tr>
+    <tr>
+        <h2>Upgrade to Tier 2</h2>
+    </tr>
+    <tr>
+        <table class="order" width="950">
+            <tr>
+                <th width="150">VIP Email</th>
+                <th width="200">Forum Name</th>
+                <th width="100">Subscription</th>
+                <th width="150">VIP Since</th>
+                <th width="100">Upgrade</th>
+            </tr>
+            {% for tVip in Tier2 %}
+                <tr>
+                    <td><a href="/vip?key={{ tVip.0.key }}">{{ tVip.0.subscriberEmail }}</a></td>
+                    <td>{{ tVip.0.subscriberForumName }}</td>
+                    <td><a href="/vipsubscription?key={{ tVip.1.key }}">Current Sub</a></td>
+                    <td>{{ tVip.0.subscriberCreated|date:"d M - H:i" }}</td>
+                    <td><a class="ajax" href="/vipupgrade" data-key="{{ tVip.1.key }}">Upgrade</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </tr>
+    <tr>
+        <h2>Upgrade to Tier 3</h2>
+    </tr>
+    <tr>
+        <table class="order" width="950">
+            <tr>
+                <th width="150">VIP Email</th>
+                <th width="200">Forum Name</th>
+                <th width="100">Subscription</th>
+                <th width="150">VIP Since</th>
+                <th width="100">Upgrade</th>
+            </tr>
+            {% for tVip in Tier3 %}
+                <tr>
+                    <td><a href="/vip?key={{ tVip.0.key }}">{{ tVip.0.subscriberEmail }}</a></td>
+                    <td>{{ tVip.0.subscriberForumName }}</td>
+                    <td><a href="/vipsubscription?key={{ tVip.1.key }}">Current Sub</a></td>
+                    <td>{{ tVip.0.subscriberCreated|date:"d M - H:i" }}</td>
+                    <td><a class="ajax" href="/vipupgrade" data-key="{{ tVip.1.key }}">Upgrade</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </tr>
+    <tr>
+        <h2>Upgrade to Tier 4</h2>
+    </tr>
+    <tr>
+        <table class="order" width="950">
+            <tr>
+                <th width="150">VIP Email</th>
+                <th width="200">Forum Name</th>
+                <th width="100">Subscription</th>
+                <th width="150">VIP Since</th>
+                <th width="100">Upgrade</th>
+            </tr>
+            {% for tVip in Tier4 %}
+                <tr>
+                    <td><a href="/vip?key={{ tVip.0.key }}">{{ tVip.0.subscriberEmail }}</a></td>
+                    <td>{{ tVip.0.subscriberForumName }}</td>
+                    <td><a href="/vipsubscription?key={{ tVip.1.key }}">Current Sub</a></td>
+                    <td>{{ tVip.0.subscriberCreated|date:"d M - H:i" }}</td>
+                    <td><a class="ajax" href="/vipupgrade" data-key="{{ tVip.1.key }}">Upgrade</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </tr>
+</table>
+{% endblock %}

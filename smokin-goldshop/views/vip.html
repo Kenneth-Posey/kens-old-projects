@@ -1,0 +1,18 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+Paypal Id: {{ tVip.subscriberPaypalId }}<br />
+Payer Email: {{ tVip.subscriberEmail }}<br />
+Forum Name: {{ tVip.subscriberForumName }}<br />
+<!--
+Active Subscription: {{ tVip.subscriberActiveSubscription|date:"d M - H:i" }}<br />
+Creation Date: {{ tVip.subscriberCreated|date:"d M - H:i" }} -->
+<br /><br /><br />
+<form action="" method="POST" name="vip">
+
+    Forum Name: <input type="text" name="forumname" />
+    <input type="submit" value="Update" />
+
+</form>
+
+{% endblock %}

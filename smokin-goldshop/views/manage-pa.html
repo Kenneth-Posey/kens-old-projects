@@ -1,0 +1,67 @@
+{% extends "skeleton.html" %}
+{% block body %}
+<span style="width:100%; text-align:center;">
+    <table>
+        <form action="" method="POST">
+            <tr>
+                <th>PA Id</th>
+                <th>Gold Type</th>
+                <th>Cash Value</th>
+                <th>Gold Amount</th>
+                <th>Promo Code</th>
+                <th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="paid"/>
+                </td>
+                <td>
+                    <input type="text" name="type"/>
+                </td>
+                <td>
+                    <input type="text" name="value"/>
+                </td>
+                <td>
+                    <input type="text" name="amount"/>
+                </td>
+                <td>
+                    <input type="text" name="promocode"/>
+                </td>
+                <td>
+                    <input type="hidden" value="{{ offset }}" name="offset">
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </form>
+    </table>
+</span>
+
+<br /><br />
+<a style="float:right;" href="/palist?offset={{next}}">Next Page >>></a>
+<a href="/palist?offset={{prev}}"><<< Previous Page</a><br /><br />
+{% for tOrder in orderlist %}
+    <table class="order" width="950">
+        <tr>
+            <th width="175">PA Order ID</th>
+            <th width="175">Gold Type</th>
+            <th width="275">Order Value</th>
+            <th width="150">Quantity</th>
+            <th width="150">Promo Code</th>
+            <th width="175">Delivered By</th>
+            <th width="175">Timestamp</th>
+        </tr>
+        <tr>
+            <td>{{ tOrder.orderPaId }}</td>
+            <td>{{ tOrder.orderGoldType }}</td>
+            <td>${{ tOrder.orderCashValue|floatformat:2 }}</td>
+            <td>{{ tOrder.orderGoldAmountPretty }}</td>
+            <td>{{ tOrder.orderPromoCode }}</td>
+            <td>{{ tOrder.GetDeliveryAgentNick }}</td>
+            <td style="text-align:center;">{{ tOrder.orderCreated|date:"d M - H:i" }} </td>
+        </tr>
+    </table><br /><br />
+{% endfor %}
+
+<a style="float:right;" href="/palist?offset={{next}}">Next Page >>></a>
+<a href="/palist?offset={{prev}}"><<< Previous Page</a><br /><br />
+{% endblock %}

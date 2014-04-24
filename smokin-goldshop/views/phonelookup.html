@@ -1,0 +1,10 @@
+{% extends 'skeleton.html' %}
+
+{% block body %}
+<form action="phonelookup" method="post">
+    Order: <input type="text" name="order" /><br />
+    Customer: <input type="text" name="customer" /><br />
+    IP Country: <input type="text" name="ipcountry" /><br />
+    <input type="submit" value="submit" /><br />
+</form>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+Customer Links: <br />
+{% for customer in mc.masterCustomerList %}
+    <a href="/customerlookup?key={{ customer }}">{{ customer }}</a><br />
+{% endfor %}
+<br />
+Customer IPs: <br />
+{% for ip in mc.masterIpList %}
+    {{ ip }}<br />
+{% endfor %}
+<br />
+Customer Phone Numbers: <br />
+{% for phone in mc.masterPhoneList %}
+    {{ phone }}<br />
+{% endfor %}
+<br />
+Customer Emails: <br />
+{% for email in mc.masterEmailList %}
+    {{ email }}<br />
+{% endfor %}
+<br />
+Customer Paypal IDs: <br />
+{% for paypal in mc.masterPaypalIdList %}
+    {{ paypal }}<br />
+{% endfor %}
+<br />
+Customer RSNs: <br />
+{% for rsn in mc.masterRsnList %}
+    {{ rsn }}<br />
+{% endfor %}
+<br />
+
+{% endblock %}

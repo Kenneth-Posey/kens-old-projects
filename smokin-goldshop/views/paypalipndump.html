@@ -1,0 +1,26 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+<table style="width:700px;">
+
+{% for key,value in data.items %}
+
+<tr>
+    <th style="width:200px;">
+        {{ key }}
+    </th>
+    <td style="width:500px;">
+        {{ value }}
+    </td>
+</tr>
+
+{% endfor %}
+
+    <tr>
+        <td colspan="2">
+            {{ dump }}
+        </td>
+    </tr>
+
+</table>
+{% endblock %}

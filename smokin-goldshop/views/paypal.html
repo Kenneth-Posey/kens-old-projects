@@ -1,0 +1,42 @@
+{% extends "skeleton.html" %}
+{% block body %}
+<a style="float:right;" href="/paypal?offset={{next}}">Next Page >>></a>
+<a href="/paypal?offset={{prev}}"><<< Previous Page</a><br /><br />
+<!--
+<table width="950">
+    <tr style="text-align:center; color: black">
+        <th colspan=5>Next Order is for <span style="color:red">{{agent}}</span>
+        </th>
+    </tr>
+</table>-->
+<br /><br />
+{% for tOrder in orders %}
+    <table class="order" width="950">
+        <tr>
+            <th width="175">Name</th>
+            <th width="275">PayPal Email</th>
+            <th width="150">Timestamp</th>
+            <th width="150">{{ tOrder.orderSimpleGoldAmount }} {{ tOrder.orderGoldType }}</th>
+            <th width="175">Delivered By</th>
+        </tr>
+        <tr>
+            <td>{{ tOrder.orderFormName }}</td>
+            <td>{{ tOrder.orderPaypalEmail }}</td>
+            <td style="text-align:center;">{{ tOrder.orderCreated|date:"d M - H:i" }} </td>
+            {% ifequal tOrder.orderDeliver 'True' %}
+                <td class="delivered" 
+            {% endifequal %}
+            {% ifequal tOrder.orderIsRefunded 'True' %}
+                <td class="refunded"    
+            {% else %}
+                <td class="notdelivered"             
+            {% endifequal %}
+                style="text-align:center;"><a href="/order?key={{ tOrder.key }}">Order Details</a></td>
+            <td>{{ tOrder.GetDeliveryAgentNick }}</td>
+        </tr>
+    </table><br /><br />
+{% endfor %}
+
+<a style="float:right;" href="/paypal?offset={{next}}">Next Page >>></a>
+<a href="/paypal?offset={{prev}}"><<< Previous Page</a><br /><br />
+{% endblock %}

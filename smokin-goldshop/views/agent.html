@@ -1,0 +1,65 @@
+{% extends "skeleton.html" %}
+{% block body %}
+<h3>Record Donation or Other Incoming Gold</h3><br /><br />
+<form name="donation" id="donation" action="" method="post">
+<table id="donationtable">
+    <tbody>
+        <tr>
+            <th>
+                RS Name of Player
+            </th>
+            <td>
+                <input name="name" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Forum Name of Player
+            </th>
+            <td>
+                <input name="fname" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Quantity Given (minus = outgoing)
+            </th>
+            <td>
+                <input name="quantity" type="text"/>
+            </td>
+        </tr>   
+        {% ifequal user.email "Smokin.Elite@gmail.com" %}
+        <tr>
+            <th>
+                Agent Email
+            </th>
+            <td>
+                <input name="email" type="text"/>
+            </td>
+        </tr>
+        {% endifequal %}
+        <tr>
+            <th>
+                Memo
+            <th>
+            <td>
+                <textarea name="memo" cols="40" rows="5"/></textarea>
+            </td>
+        </tr>
+        <!--<tr>
+            <th>
+                Use Agent's Gold
+            </th>
+            <td style="padding-top: 2px;">
+                <input type="checkbox" name="agentgold" id="agentgold" />
+            </td>
+        </tr>-->
+        <tr>
+            <td>
+                <input type="submit" value="Save Entry" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+</form>
+{% endblock %}

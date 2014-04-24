@@ -1,0 +1,34 @@
+{% extends "skeleton.html" %}
+{% block body %}
+    <table>
+        <style>
+            div.maxwidth
+            {
+                overflow: hidden;
+                width: 180px;
+            }
+            tr.grey
+            {
+                background-color:#AAAAAA;
+            }
+        </style>
+        <tr class="grey">
+            <th>Agent Email</th>
+            <th>Nickname</th>
+            <th width="100px">Commission</th>
+            <th width="170px">07 Stock</th>
+            <th width="170px">EoC Stock</th>
+            <th></th>
+        </tr>
+        {% for agent in agents %}
+            <tr class="{% cycle '' 'grey'%}">
+                <td><a href="/agentmaster?agent={{ agent.key }}">{{agent.agentId}}</a></td>
+                <td>{{ agent.agentNickName }}</td>
+                <td>${{ agent.agentCurrentCommission|floatformat:2 }}</td>
+                <td>{{ agent.agentGoldSupply07String }}</td>
+                <td>{{ agent.agentGoldSupplyEocString }}</td>
+                <td><a class="ajax" data-id="{{ agent.key }}" href="/agentaccount">Mark as Paid</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

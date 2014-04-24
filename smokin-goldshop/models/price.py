@@ -1,0 +1,47 @@
+from google.appengine.ext import db
+
+class Price(db.Expando):
+    
+    priceDateCreated = db.DateTimeProperty(auto_now_add=True)
+    priceCreator = db.StringProperty(default='')
+    priceIsFake = db.BooleanProperty(default=False)
+    
+    priceType = db.StringProperty(default='regular') #options = regular, 07
+    
+    price0001m = db.FloatProperty(default=0.0)
+    price0002m = db.FloatProperty(default=0.0)
+    price0003m = db.FloatProperty(default=0.0)
+    price0004m = db.FloatProperty(default=0.0)
+    price0005m = db.FloatProperty(default=0.0)
+    price0006m = db.FloatProperty(default=0.0)
+    price0007m = db.FloatProperty(default=0.0)
+    price0008m = db.FloatProperty(default=0.0)
+    price0009m = db.FloatProperty(default=0.0)
+    price0010m = db.FloatProperty(default=0.0)
+    price0011m = db.FloatProperty(default=0.0)
+    price0012m = db.FloatProperty(default=0.0)
+    price0013m = db.FloatProperty(default=0.0)
+    price0014m = db.FloatProperty(default=0.0)
+    price0015m = db.FloatProperty(default=0.0)
+    price0020m = db.FloatProperty(default=0.0)
+    price0025m = db.FloatProperty(default=0.0)
+    price0030m = db.FloatProperty(default=0.0)
+    price0035m = db.FloatProperty(default=0.0)
+    price0040m = db.FloatProperty(default=0.0)
+    price0050m = db.FloatProperty(default=0.0)
+    price0060m = db.FloatProperty(default=0.0)
+    price0070m = db.FloatProperty(default=0.0)
+    price0080m = db.FloatProperty(default=0.0)
+    price0090m = db.FloatProperty(default=0.0)
+    price0100m = db.FloatProperty(default=0.0)
+    price0150m = db.FloatProperty(default=0.0)
+    price0200m = db.FloatProperty(default=0.0)
+    price0300m = db.FloatProperty(default=0.0)
+    price0400m = db.FloatProperty(default=0.0)
+    price0500m = db.FloatProperty(default=0.0)
+    price0600m = db.FloatProperty(default=0.0)
+    price0700m = db.FloatProperty(default=0.0)
+    price0800m = db.FloatProperty(default=0.0)
+    price0900m = db.FloatProperty(default=0.0)
+    price1000m = db.FloatProperty(default=0.0)
+    

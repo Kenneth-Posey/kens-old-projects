@@ -1,0 +1,38 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+<a href="?action=signup">Show Only New Subscriptions</a><br />
+<a href="?action=payment">Show Only Subscriber Payments</a><br />
+<a href="?action=cancel">Show Only Subscriber Cancelations</a><br />
+<a href="?action=fail">Show Only Payment Failures</a><br /><br />
+
+
+<table>
+    <tr>
+        <th>
+            Sub Email
+        </th>
+        <th>
+            Sub Amount
+        </th>
+        <th>
+            Sub Date
+        </th>
+    </tr>
+    
+{% for tIpn in ipnlist %}
+    <tr>
+        <td>
+            <a href="/paypalipndump?key={{ tIpn.key }}">{{ tIpn.payer_email }}<a/>
+        </td>
+        <td>
+            {{ tIpn.mc_gross }}
+        </td>
+        <td>
+            {{ tIpn.subscr_date }}
+        </td>
+    </tr>
+
+{% endfor %}
+</table>
+{% endblock %}

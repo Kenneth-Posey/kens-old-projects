@@ -1,0 +1,29 @@
+{% extends "skeleton.html" %}
+{% block body %}
+Current 07 Price: ${{ stock.stockPrice07 }}/m
+<br />
+Current EOC Price: ${{ stock.stockPriceEoc }}/m
+<br /><br />
+<span style="width:100%; text-align:center;">
+    <table>
+        <form action="" method="POST">
+            <tr>
+                <th>07 Price</th>
+                <th>EOC Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="07price"/>
+                </td>
+                <td>
+                    <input type="text" name="eocprice"/>
+                </td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </form>
+    </table>
+</span>
+
+{% endblock %}

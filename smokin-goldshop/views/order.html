@@ -1,0 +1,417 @@
+{% extends "skeleton.html" %}
+{% block body %}
+
+{% ifequal showerror 'True' %}
+<h3 style="color:red">{{ error }} </h3> <br /><br />
+{% endifequal %}
+<table class="master" width="960" style="border-color: black; border-style: solid; border-width:3px; ">
+    <tr VALIGN="top">
+        <td style="width:450px">
+            <table class="customerinfo" width="450">
+                <tr>
+                    <th colspan="2">Order Information</th>
+                </tr>
+                <tr>
+                    <th>Customer Name</th>
+                    <td>{{ tOrder.orderFormName }}</td>
+                </tr>
+                <tr>
+                    <th>
+                        Instructions
+                    </th>
+                    <td>
+                        {{ tOrderData.instructions }}
+                    </td>
+                <tr>
+                <tr>
+                    <th>Quantity</th>
+                    <td>{{ tOrder.orderSimpleGoldAmount }} {{ tOrder.orderGoldType }}</td>
+                </tr>
+                <tr>
+                    <th>Gold Type</th>
+                    <td>{{ tOrder.orderGoldType }}</td>
+                </tr>
+                <tr>
+                    <th>Promo Code</th>
+                    <td>{{ tOrder.orderPromotionalCode }}</td>
+                </tr>
+                <tr>
+                    <th>Promo Amount</th>
+                    <td>{{ tOrderData.bonus }} </td>
+                </tr>
+                <tr>
+                    <th>Account Name</th>
+                    <td>{{ tOrder.orderAccountName }}</td>
+                </tr>
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <!--<tr><td>&nbsp;</td></tr>-->
+                <tr>
+                    <th>
+                        Customer Memo:
+                    </th>
+                    <td>
+                        {{tCustomer.customerMemo}}
+                    </td>
+                </tr>
+                <tr>
+                    <form onsubmit="return CompareGuids();">
+                        <th>
+                            <input id="correct-order-code" type="text" style="display:none" value="{{ tOrder.orderVerificationCode }}" />
+                            <input id="paypal-transaction-id" type="text" style="display:none" value="{{ tOrder.orderTransactionId }}" />
+                            <input type="submit" id="check-code" value="Check Code" />
+                        </th>
+                        <td id="check-order-code-box">
+                            <input type="text" id="check-order-code" value="" />
+                        </td>
+                    </form>
+                </tr>
+                <tr>
+                    <th>
+                        Order is Verified?
+                    </th>
+                    <td id='verified-order-field'>
+                        {{ tOrder.orderIsVerified }}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="20"></td>
+        <td width="470">
+            <table width="450" class="orderinfo">
+                <tr>
+                    <th colspan="3">
+                        Verification Info
+                    </th>
+                </tr>
+                <tr>
+                    <th>Email Verification</th>
+                    <td>Current: {{ tCustomer.customerEmailVerificationNumber }}</td>
+                    <td>
+                        <a class="ajax" href="/verifyemail" data-action="email" 
+                        data-id="{{ tOrder.orderCustomer }}" data-email="{{ tOrder.orderPaypalEmail }}">
+                            Resend
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email is Verified</th>
+                    <td>{{ tCustomer.customerEmailVerified }}</td>
+                    <td>
+                    {% ifequal tOrderData.emailverified 'False' %}
+                        <a class="ajax" href="/verifyemail" data-action="email" data-verified="True"
+                        data-id="{{ tOrder.orderCustomer }}" >
+                            Verify
+                        </a>
+                    {% endifequal %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Phone Verification
+                    </th>
+                    <td>
+                        Current: {{ tCustomer.customerPhoneVerificationNumber }}
+                    </td>
+                    <td>
+                        <a class="ajax" href="/verifyphone" data-action="phone" 
+                        data-id="{{ tOrder.orderCustomer }}" data-number="{{ tCustomer.customerPhone }}">
+                            Resend
+                        </a>
+                    </td>
+                </tr>
+                    <th>
+                        Phone Number
+                    </th>
+                    <td>
+                        {{ tCustomer.customerPhone }}
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone is Verified</th>
+                    <td>{{ tCustomer.customerPhoneVerified }}</td>
+                    <td>
+                    {% ifequal tOrderData.phoneverified 'False' %}
+                        <a class="ajax" href="/verifyphone" data-action="phone" data-verified="True"
+                        data-id="{{ tOrder.orderCustomer }}" >
+                            Verify
+                        </a>
+                    {% endifequal %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>ID is Verified</th>
+                    <td>{{ tCustomer.customerIdVerified }}</td>
+                    <td>
+                    {% ifequal tOrderData.idverified 'False' %}
+                        <a class="ajax" href="/verifyid" data-action="id" data-verified="True"
+                        data-id="{{ tOrder.orderCustomer }}" >
+                            Verify
+                        </a>
+                    {% endifequal %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Order IP
+                    </th>
+                    <td>
+                        <a href="http://whatismyipaddress.com/ip/{{ tOrder.orderIp }}" target="_blank">{{ tOrder.orderIp }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ip Proxy</th>
+                    <td>{{ tIpInfo.ipProxy }}</td>
+                </tr>
+                <tr>
+                    <th>Ip Type</th>
+                    <td>{{ tIpInfo.ipType }}</td>
+                </tr>
+                <tr>
+                    <th>Location Match</th>
+                    <td>{{ tOrderData.locationmatch }}</td>
+                </tr>
+                {% ifequal tOrderData.locationmatch 'False' %}
+                <tr>
+                    <th>
+                        Paypal Country   
+                    </th>
+                    <td>
+                        {{ tOrderData.paypalcountry }} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        IP Country   
+                    </th>
+                    <td>
+                        {{ tIpInfo.ipCountry }} 
+                    </td>
+                </tr><!--
+                <tr>
+                    <th>
+                        Paypal State
+                    </th>
+                    <td>
+                        {{ tOrderData.phoneState }} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        IP State
+                    </th>
+                    <td>
+                        {{ tIpInfo.ipState }} 
+                    </td>
+                </tr>-->
+                {% endifequal %}
+            </table>
+        </td>
+    </tr>
+    <tr VALIGN="top">
+        <td width="470">
+            <table class="orderinfo" width="450"> 
+                <tr>
+                    <th colspan="2">
+                        Payment Info
+                    </th>
+                </tr>
+                <tr>
+                    <th>Paypal Email</th>
+                    <td>{{ tOrder.orderPaypalEmail }}</td>
+                </tr>
+                <tr>
+                    <th>Paypal Name</th>
+                    <td>
+                        <a href="/customerlookup?key={{ tOrder.orderCustomer }}">
+                            {{ tOrder.orderPaypalFirstName }} {{ tOrder.orderPaypalLastName }}
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Amount Paid</th>
+                    <td>${{ tOrder.orderCost }} </td>
+                </tr>
+                <tr>
+                    <th>24 Hour Order Total</th>
+                    <td>${{ tOrderData.orderTotal24 }} </td>
+                </tr>
+                <!--<tr>
+                    <th>15 Day Order Total</th>
+                    <td>${{ tOrderData.orderTotal15 }} </td>
+                </tr>-->
+                <tr>
+                    <th>30 Day Order Total</th>
+                    <td>${{ tOrderData.orderTotal }} </td>
+                </tr>
+            </table>
+        </td>
+        <td width="20">
+        <td width="470">
+            <table class="ipinfo" width="450">
+                <tr>
+                    <th colspan="2">Order Delivery Information</th>
+                </tr>
+                <tr>
+                    <th>Order Placed</th>
+                    <td>{{ tOrder.orderCreated|date:"d M Y H:i:s" }}</td>
+                </tr>
+                <tr>
+                    <th>Order Delivered</th>
+                    <td>{{ tOrder.orderCompleted|date:"d M Y H:i:s" }}</td>
+                </tr>
+                <tr>
+                    <th>
+                        Assigned Agent: 
+                    </th>
+                    <td>
+                        {{ tAssignedAgent.agentNickName }}
+                        <!--{{ tOrder.orderAssignedAgent }}-->
+                    </td>
+                </tr>
+                {% ifequal tOrder.orderDeliver 'True' %}
+                <tr>
+                    <th>
+                        Delivery Status: 
+                    </th>
+                    <td>
+                        {{ tOrder.orderDeliver }}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Delivery Agent: 
+                    </th>
+                    <td>
+                        {{ tDeliveryAgent.agentNickName }}
+                        <!--{{ tOrder.orderDeliveryAgent }}-->
+                    </td>
+                </tr>
+                {% endifequal %}
+                
+                {% ifequal tOrder.orderIsRefunded 'True' %}
+                <tr>
+                    <th>
+                        Refund Status: 
+                    </th>
+                    <td>
+                        {{ tOrder.orderIsRefunded }}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Refund Agent: 
+                    </th>
+                    <td>
+                        {{ tRefundAgent.agentNickName }}
+                        <!--{{ tOrder.orderRefundAgent }}-->
+                    </td>
+                </tr>
+                {% endifequal %}
+                
+                {% ifequal tDisplayDeliver 'True' %}     
+                    {% ifequal tOrder.orderDeliver 'False' %}                   
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center">
+                                <a class="ajax" href="/completeorder" data-action="complete" data-agentgold="false"
+                                data-id="{{ tOrder.orderCustomer }}" data-orderid="{{ tOrder.key }}">
+                                Complete Order</a>
+                            </td>
+                        </tr>
+                    {% endifequal %}
+                {% endifequal %}
+                
+                {% ifnotequal tOrder.orderIsRefunded 'True' %}
+                    {% ifequal tOrder.orderDeliver 'False' %}
+                            <tr>
+                                <td>&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align:center">
+                                    <a href="javascript:activaterefund();" id="confirmrefundlink">
+                                        Are you sure?
+                                    </a>
+                                    <a id="refundlink" class="ajax" href="" style="decoration:none; color:red;"
+                                    data-orderid="{{ tOrder.orderTransactionId }}">
+                                        Refund Order
+                                    </a>
+                                </td>
+                            </tr>
+                    {% endifequal %}
+                {% endifnotequal %}
+            </table>
+        </td>
+    </tr>
+    <tr VALIGN="top">
+        <td width="470">
+            <table class="orderinfo" width="450"> 
+                <tr>
+                    <th colspan="2">
+                        Shipping Address Info
+                    </th>
+                </tr>
+                <tr>
+                    <th>Protection Eligibility</th>
+                    <td>{{ PROTECTIONELIGIBILITYTYPE }}</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>{{ ADDRESSSTATUS }}</td>
+                </tr>
+                <tr>
+                    <th>Recipient Name</th>
+                    <td>{{ SHIPTONAME }}</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>{{ SHIPTOPHONENUM }}</td>
+                </tr>
+                <tr>
+                    <th>Line 1</th>
+                    <td>{{ SHIPTOSTREET }}</td>
+                </tr>
+                <tr>
+                    <th>Line 2</th>
+                    <td>{{ SHIPTOSTREET2 }}</td>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <td>{{ SHIPTOCITY }}</td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td>{{ SHIPTOSTATE }}</td>
+                </tr>
+                <tr>
+                    <th>Zip</th>
+                    <td>{{ SHIPTOZIP }}</td>
+                </tr>
+                <tr>
+                    <th>Country Code</th>
+                    <td>{{ SHIPTOCOUNTRYCODE }}</td>
+                </tr>
+                <tr>
+                    <th>Order Code</th>
+                    <td>{{ tOrder.orderVerificationCode }}</td>
+                </tr>
+            </table>
+        </td>
+        <td width="20">
+        <td width="470">
+            &nbsp;
+        </td>
+    </tr>
+</table>    
+
+{% endblock %}
