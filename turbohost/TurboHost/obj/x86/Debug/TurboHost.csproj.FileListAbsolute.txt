@@ -1,0 +1,55 @@
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.LoginSetup.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.NewBet.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.Properties.Resources.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TextReplacements.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TurboHost.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.UpdateCheck.resources
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\TurboHost.exe.config
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\TurboHost.exe
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\TurboHost.pdb
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Google.GData.Client.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Google.GData.Documents.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Google.GData.Extensions.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Google.GData.Spreadsheets.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Google.GData.AccessControl.dll
+C:\Users\Virus\Documents\TurboHost\TurboHost\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.exe
+C:\Users\Virus\Documents\TurboHost\TurboHost\obj\x86\Debug\TurboHost.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\TurboHost.exe.config
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.exe
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.LoginSetup.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.NewBet.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.Properties.Resources.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TextReplacements.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TurboHost.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\TurboHost.UpdateCheck.resources
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\TurboHost.exe
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\TurboHost.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Google.GData.Client.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Google.GData.Documents.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Google.GData.Extensions.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Google.GData.Spreadsheets.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Google.GData.AccessControl.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\TurboHost\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1- Current Programming Projects\turbohost\TurboHost\TurboHost\bin\Debug\TurboHost.exe.config
+C:\Users\Virus\Documents\1- Current Programming Projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.exe
+C:\Users\Virus\Documents\1- Current Programming Projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\bin\Debug\TurboHost.exe.config
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.pdb
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.csprojResolveAssemblyReference.cache
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.LoginSetup.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.NewBet.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.Properties.Resources.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TextReplacements.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.TurboHost.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.UpdateCheck.resources
+C:\Users\KennethPosey\Downloads\Desktop_4-20-19-15-29\C\Users\Virus\Documents\_old-projects\turbohost\TurboHost\TurboHost\obj\x86\Debug\TurboHost.csproj.GenerateResource.Cache

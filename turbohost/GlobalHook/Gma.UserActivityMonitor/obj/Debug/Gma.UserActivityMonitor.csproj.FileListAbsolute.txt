@@ -1,0 +1,11 @@
+C:\Users\Virus\Downloads\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Downloads\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Downloads\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Downloads\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Downloads\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Virus\Documents\1 Current Programming Projects\TurboHost\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
