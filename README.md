@@ -1,4 +1,4 @@
-Collection of Projects for Code Samples 
+Old Projects for Code Samples 
 =================
 
 ##Smokin Goldshop
